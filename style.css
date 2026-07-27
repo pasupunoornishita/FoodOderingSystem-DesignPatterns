@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+/* Main form */
+form {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Section spacing */
+.section {
+    margin: 12px 0;
+}
+
+/* Food and toppings alignment */
+.food-list {
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Size and Payment alignment */
+.form-table {
+    display: inline-block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.form-row {
+    margin: 15px 0;
+}
+
+.form-row label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+select {
+    width: 150px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+/* Heading styles */
+h1 {
+    color: black;
+    font-size: 50px;
+}
+
+h2 {
+    color: green;
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+}

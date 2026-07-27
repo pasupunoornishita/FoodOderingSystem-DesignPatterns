@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Food Ordering System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Food Ordering System</h1>
+
+    <form method="POST">
+
+        <div class="section">
+            <h3>Select Food</h3>
+
+            <div class="food-list">
+                <label><input type="checkbox" name="food" value="pizza"> Pizza</label><br>
+                <label><input type="checkbox" name="food" value="burger"> Burger</label><br>
+                <label><input type="checkbox" name="food" value="sandwich"> Sandwich</label><br>
+                <label><input type="checkbox" name="food" value="frenchfries"> French Fries</label><br>
+                <label><input type="checkbox" name="food" value="pasta"> Pasta</label><br>
+                <label><input type="checkbox" name="food" value="subway"> Subway</label><br>
+                <label><input type="checkbox" name="food" value="taco"> Taco</label><br>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="form-table">
+            <div class="form-row">
+                <label>Select Size:</label>
+
+                <select name="size">
+                    <option value="regular">Regular</option>
+                    <option value="medium">Medium</option>
+                    <option value="full">Full</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label>Payment:</label>
+
+                <select name="payment">
+                    <option value="upi">UPI</option>
+                    <option value="card">Credit Card</option>
+                    <option value="debit">Debit Card</option>
+                    <option value="netbanking">Net Banking</option>
+                    <option value="cod">Cash On Delivery</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>Toppings & Extras</h3>
+
+            <div class="food-list">
+                <label><input type="checkbox" name="cheese"> Extra Cheese (+₹50)</label><br>
+                <label><input type="checkbox" name="mushroom"> Mushroom (+₹40)</label><br>
+                <label><input type="checkbox" name="corn"> Corn (+₹30)</label><br>
+                <label><input type="checkbox" name="onion"> Onion (+₹20)</label><br>
+                <label><input type="checkbox" name="coke"> Coke (+₹40)</label><br>
+                <label><input type="checkbox" name="icecream"> Ice Cream (+₹60)</label><br>
+            </div>
+        </div>
+
+        <button type="submit">Order</button>
+
+    </form>
+
+    <h2>{{ result }}</h2>
+
+</body>
+</html>
